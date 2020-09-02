@@ -10,7 +10,7 @@ public class Main {
         Tests.testPairToNumber(MajorColor.VIOLET, MinorColor.SLATE, 25);
     }
     
-    public String toString() {
+    public String ToString() {
     	String colorManual="";
     	
     	for(int index = 1; index <= 25; index++) {

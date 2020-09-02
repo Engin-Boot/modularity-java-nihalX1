@@ -1,6 +1,6 @@
 package colorcoder;
 
- enum MajorColor {
+ enum MajorColor implements IColor {
     WHITE(0),
     RED(1),
     BLACK(2),
@@ -10,16 +10,15 @@ package colorcoder;
     private MajorColor(int index) {
         this.index = index;
     }
-    int getIndex() {
+    public int getIndex() {
         return index;
     }
-    public static MajorColor fromIndex(int index) {
-        for(MajorColor color: MajorColor.values()) {
-            if(color.getIndex() == index) {
-                return color;
-            }
-        }
-        return null;
-        //getIndex(index, MajorColor.values()
-    }
+//    public static MajorColor fromIndex(int index) {
+//        for(MajorColor color: MajorColor.values()) {
+//            if(color.getIndex() == index) {
+//                return color;
+//            }
+//        }
+//        return null;
+//    }
 };
